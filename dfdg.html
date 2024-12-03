@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video y Redirección</title>
+    <script>
+        // Redirige después de la duración del video (10 segundos en este ejemplo)
+        function iniciarRedireccion() {
+            setTimeout(() => {
+                window.location.href = "https://www.ejemplo.com"; // Cambia la URL por la que necesites
+            }, 10000); // 10000 milisegundos = 10 segundos
+        }
+    </script>
+</head>
+<body onload="iniciarRedireccion()">
+    <h1>Disfruta el video antes de ser redirigido...</h1>
+    <video width="640" height="360" autoplay>
+        <source src="video.mp4" type="file:///C:/Users/Josue%20CG/Downloads/d.html.mp4"> <!-- Cambia 'video.mp4' por la rut…
